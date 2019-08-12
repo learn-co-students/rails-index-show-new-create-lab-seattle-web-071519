@@ -1,5 +1,5 @@
 <%Coupon.all.each do |coupon|%>
 <%=coupon.store%>
-<a href=<%="/coupons/#{coupon.id}"%>> <%=coupon.coupon_code%> </a>
+<%=link_to "#{coupon.coupon_code}", "/coupons/#{coupon.id}" %>
 <br>
 <%end%>
